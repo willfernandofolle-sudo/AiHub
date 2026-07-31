@@ -1,7 +1,7 @@
-import { Briefcase, Code2, Film, Image, LayoutGrid, MessageSquareText, Music, User, type LucideProps } from 'lucide-react'
+import { Briefcase, Code2, Film, Image, LayoutGrid, MessageSquareText, Music, User, type LucideIcon, type LucideProps } from 'lucide-react'
 import { Category } from '@/data/tools'
 
-const iconMap: Record<Category | 'tutte', (props: LucideProps) => JSX.Element> = {
+const iconMap: Record<Category | 'tutte', LucideIcon> = {
     tutte: LayoutGrid,
     imagem: Image,
     video: Film,
