@@ -11,7 +11,7 @@ export default function Background() {
             <div
                 className="absolute -top-48 -left-48 w-[700px] h-[700px] rounded-full opacity-[0.34] animate-blob"
                 style={{
-                    background: 'radial-gradient(circle, rgba(23,20,37,0.52) 0%, rgba(25,26,30,0.36) 34%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(55, 54, 58, 0.52) 0%, rgba(25,26,30,0.36) 34%, transparent 70%)',
                     filter: 'blur(90px)',
                 }}
             />
@@ -20,7 +20,7 @@ export default function Background() {
             <div
                 className="absolute -top-20 right-0 w-[550px] h-[550px] rounded-full opacity-[0.2] animate-blob-slow"
                 style={{
-                    background: 'radial-gradient(circle, rgba(25,26,30,0.44) 0%, rgba(23,20,37,0.3) 45%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(35, 36, 43, 0.44) 0%, rgba(23,20,37,0.3) 45%, transparent 70%)',
                     filter: 'blur(90px)',
                     animationDelay: '-9s',
                 }}
@@ -30,7 +30,7 @@ export default function Background() {
             <div
                 className="absolute top-1/2 -left-24 w-[480px] h-[480px] rounded-full opacity-[0.2] animate-blob-slower"
                 style={{
-                    background: 'radial-gradient(circle, rgba(23,20,37,0.4) 0%, rgba(25,26,30,0.26) 45%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(40, 40, 41, 0.4) 0%, rgba(25,26,30,0.26) 45%, transparent 70%)',
                     filter: 'blur(90px)',
                     animationDelay: '-17s',
                 }}
@@ -40,7 +40,7 @@ export default function Background() {
             <div
                 className="absolute -bottom-32 right-1/4 w-[600px] h-[600px] rounded-full opacity-[0.18] animate-blob"
                 style={{
-                    background: 'radial-gradient(circle, rgba(25,26,30,0.38) 0%, rgba(1,2,4,0.24) 45%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(37, 37, 37, 0.38) 0%, rgba(37, 37, 37, 0.24) 45%, transparent 70%)',
                     filter: 'blur(90px)',
                     animationDelay: '-4s',
                 }}

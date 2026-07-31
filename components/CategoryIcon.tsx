@@ -14,6 +14,7 @@ const iconMap: Record<Category | 'tutte', LucideIcon> = {
 
 interface Props extends LucideProps {
     category: Category | 'tutte'
+    className?: string
 }
 
 export default function CategoryIcon({ category, ...props }: Props) {

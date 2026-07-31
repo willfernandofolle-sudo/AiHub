@@ -3,12 +3,6 @@ import { Tool, categoryConfig } from '@/data/tools'
 
 interface Props { tool: Tool }
 
-const badgeStyle: Record<string, string> = {
-    Gratis: 'bg-white/10 text-white border border-white/14',
-    Freemium: 'bg-zinc-200/10 text-zinc-100 border border-zinc-200/16',
-    'A pagamento': 'bg-white text-[#010204] border border-white/80',
-}
-
 export default function ToolCard({ tool }: Props) {
     const cat = categoryConfig[tool.category]
 
@@ -20,33 +14,23 @@ export default function ToolCard({ tool }: Props) {
             className="glass-card rounded-3xl p-5 flex flex-col gap-4 group"
         >
             {/* ── Top row ── */}
-            <div className="flex items-start justify-between gap-2">
+            <div className="flex items-start gap-2">
 
                 {/* Minimal category icon */}
                 <div
-                    className="w-[52px] h-[52px] rounded-2xl flex items-center justify-center flex-shrink-0 border border-white/12 bg-white/8 text-white"
+                    className="w-[62px] h-[62px] rounded-2xl flex items-center justify-center flex-shrink-0 bg-white/8 text-white"
                     style={{
                         boxShadow: '0 14px 26px rgba(2,6,23,0.22)',
                     }}
                 >
-                    <CategoryIcon category={tool.category} className="h-5 w-5 stroke-[1.8]" />
+                    <CategoryIcon category={tool.category} className="h-6 w-6 stroke-[1.8]" />
                 </div>
-
-                {/* Badge */}
-                <span className={`text-[11px] px-2.5 py-1 rounded-full font-semibold leading-none ${badgeStyle[tool.badge]}`}>
-                    {tool.badge}
-                </span>
             </div>
 
             {/* ── Body ── */}
             <div className="flex-1 min-w-0">
                 <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
                     <h3 className="font-bold text-white text-[1.05rem] leading-tight">{tool.name}</h3>
-                    {tool.featured && (
-                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-white/12 text-white border border-white/14 font-semibold">
-                            Selezionato
-                        </span>
-                    )}
                 </div>
                 <p className="text-[13px] text-white/60 leading-relaxed line-clamp-3">
                     {tool.description}
