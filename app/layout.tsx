@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({
+const poppins = Poppins({
     subsets: ['latin'],
-    variable: '--font-inter',
+    variable: '--font-poppins',
+    weight: ['400', '500', '600', '700'],
     display: 'swap',
 })
 
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="it" className={inter.variable}>
+        <html lang="it" className={poppins.variable}>
             <body className="antialiased font-sans">{children}</body>
         </html>
     )

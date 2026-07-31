@@ -32,8 +32,8 @@ export default function CategoryFilter({ selected, onChange }: Props) {
                                 'flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-medium',
                                 'whitespace-nowrap flex-shrink-0 transition-all duration-200',
                                 active
-                                    ? 'bg-black text-white border border-black shadow-[0_12px_24px_rgba(10,10,10,0.14)]'
-                                    : 'glass-pill text-black/65 hover:text-black',
+                                    ? 'bg-white text-[#08111f] border border-white/40 shadow-[0_16px_36px_rgba(186,214,255,0.24)]'
+                                    : 'glass-pill text-white/62 hover:text-white',
                             ].join(' ')}
                         >
                             <CategoryIcon category={cat.id} className="h-4 w-4 stroke-[1.8]" />

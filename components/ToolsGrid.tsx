@@ -16,7 +16,7 @@ export default function ToolsGrid() {
     }, [selected])
 
     return (
-        <section id="strumenti" className="pt-28 pb-28">
+        <section id="strumenti" className="pt-20 pb-28">
 
             {/* Category filter */}
             <div className="mb-8">
@@ -26,7 +26,7 @@ export default function ToolsGrid() {
             <div className="max-w-7xl mx-auto px-5 space-y-5">
 
                 {/* Result count */}
-                <p className="text-xs text-black/35 tracking-wide uppercase">
+                <p className="text-xs text-white/42 tracking-[0.24em] uppercase">
                     {filtered.length} {filtered.length === 1 ? 'strumento' : 'strumenti'}
                 </p>
 

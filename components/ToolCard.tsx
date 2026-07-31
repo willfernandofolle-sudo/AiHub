@@ -4,9 +4,9 @@ import { Tool, categoryConfig } from '@/data/tools'
 interface Props { tool: Tool }
 
 const badgeStyle: Record<string, string> = {
-    Gratis: 'bg-white text-black border border-black/10',
-    Freemium: 'bg-stone-100 text-black/75 border border-black/10',
-    'A pagamento': 'bg-black text-white border border-black',
+    Gratis: 'bg-white/10 text-white border border-white/14',
+    Freemium: 'bg-sky-200/10 text-sky-100 border border-sky-200/14',
+    'A pagamento': 'bg-white text-[#08111f] border border-white/80',
 }
 
 export default function ToolCard({ tool }: Props) {
@@ -24,9 +24,9 @@ export default function ToolCard({ tool }: Props) {
 
                 {/* Minimal category icon */}
                 <div
-                    className="w-[52px] h-[52px] rounded-2xl flex items-center justify-center flex-shrink-0 border border-black/10 bg-black text-white"
+                    className="w-[52px] h-[52px] rounded-2xl flex items-center justify-center flex-shrink-0 border border-white/12 bg-white/8 text-white"
                     style={{
-                        boxShadow: '0 12px 24px rgba(10,10,10,0.1)',
+                        boxShadow: '0 14px 26px rgba(2,6,23,0.22)',
                     }}
                 >
                     <CategoryIcon category={tool.category} className="h-5 w-5 stroke-[1.8]" />
@@ -41,25 +41,25 @@ export default function ToolCard({ tool }: Props) {
             {/* ── Body ── */}
             <div className="flex-1 min-w-0">
                 <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
-                    <h3 className="font-bold text-black text-[1.05rem] leading-tight">{tool.name}</h3>
+                    <h3 className="font-bold text-white text-[1.05rem] leading-tight">{tool.name}</h3>
                     {tool.featured && (
-                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-black text-white border border-black font-semibold">
+                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-white/12 text-white border border-white/14 font-semibold">
                             Selezionato
                         </span>
                     )}
                 </div>
-                <p className="text-[13px] text-black/58 leading-relaxed line-clamp-3">
+                <p className="text-[13px] text-white/60 leading-relaxed line-clamp-3">
                     {tool.description}
                 </p>
             </div>
 
             {/* ── Footer ── */}
-            <div className="flex items-center justify-between pt-3 border-t border-black/[0.08]">
-                <span className="text-[11px] text-black/45 flex items-center gap-1.5">
+            <div className="flex items-center justify-between pt-3 border-t border-white/[0.08]">
+                <span className="text-[11px] text-white/42 flex items-center gap-1.5">
                     <CategoryIcon category={tool.category} className="h-3.5 w-3.5 stroke-[1.8]" />
                     {cat.label}
                 </span>
-                <span className="text-[13px] text-black/45 group-hover:text-black transition-colors flex items-center gap-1">
+                <span className="text-[13px] text-white/44 group-hover:text-white transition-colors flex items-center gap-1">
                     Apri
                     <svg
                         className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
