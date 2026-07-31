@@ -12,14 +12,14 @@ export default function Header() {
                 </Link>
 
                 <p className="text-[11px] md:text-sm text-white/68 tracking-wide text-center whitespace-nowrap">
-                    Una collezione AI con presenza scenica.
+                    Una collezione di AI per semplificare la tua vita.
                 </p>
 
                 <span
                     className="justify-self-end text-sm md:text-base text-white/78 leading-none whitespace-nowrap"
                     style={{ fontFamily: '"Brush Script MT", "Segoe Script", cursive' }}
                 >
-                    by william fernando folle
+                    By William Fernando Folle
                 </span>
 
             </div>
