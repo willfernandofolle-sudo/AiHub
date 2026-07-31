@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --bg: #06070f;
+    --bg: #050505;
 }
 
 html {
@@ -23,7 +23,7 @@ body {
 
     /* Nav bar */
     .glass-nav {
-        background: rgba(6, 7, 15, 0.6);
+        background: rgba(5, 5, 5, 0.78);
         backdrop-filter: blur(32px) saturate(200%);
         -webkit-backdrop-filter: blur(32px) saturate(200%);
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -91,12 +91,10 @@ body {
     }
 
     .text-glow-accent {
-        background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #34d399 100%);
-        background-size: 200% auto;
+        background: linear-gradient(135deg, #ffffff 0%, rgba(212, 212, 216, 0.9) 45%, rgba(113, 113, 122, 0.95) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        animation: shimmer 4s linear infinite;
     }
 }
 

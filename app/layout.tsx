@@ -9,15 +9,15 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-    title: 'AI Hub — As Melhores Ferramentas de IA',
+    title: 'AI Hub — I Migliori Strumenti di IA',
     description:
-        'Descubra e acesse as principais ferramentas de inteligência artificial do mercado, organizadas por categoria. Exclusivo para alunos do curso.',
-    keywords: ['inteligência artificial', 'IA', 'ferramentas IA', 'AI tools', 'Midjourney', 'ChatGPT', 'Claude', 'Runway'],
+        'Scopri e accedi ai principali strumenti di intelligenza artificiale sul mercato, organizzati per categoria. Esclusivo per gli studenti del corso.',
+    keywords: ['intelligenza artificiale', 'IA', 'strumenti IA', 'AI tools', 'Midjourney', 'ChatGPT', 'Claude', 'Runway'],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="pt-BR" className={inter.variable}>
+        <html lang="it" className={inter.variable}>
             <body className="antialiased font-sans">{children}</body>
         </html>
     )

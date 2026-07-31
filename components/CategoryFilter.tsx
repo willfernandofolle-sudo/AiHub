@@ -3,11 +3,11 @@
 import { categoryConfig, Category } from '@/data/tools'
 
 interface Props {
-    selected: Category | 'todas'
-    onChange: (cat: Category | 'todas') => void
+    selected: Category | 'tutte'
+    onChange: (cat: Category | 'tutte') => void
 }
 
-const ALL = { id: 'todas' as const, label: 'Todas', emoji: '✦' }
+const ALL = { id: 'tutte' as const, label: 'Tutte', emoji: '✦' }
 
 export default function CategoryFilter({ selected, onChange }: Props) {
     const cats = [
@@ -20,7 +20,7 @@ export default function CategoryFilter({ selected, onChange }: Props) {
     ]
 
     return (
-        <div id="categorias" className="px-5 max-w-7xl mx-auto">
+        <div id="categorie" className="px-5 max-w-7xl mx-auto">
             <div className="flex gap-2 overflow-x-auto hide-scrollbar pb-1">
                 {cats.map((cat) => {
                     const active = selected === cat.id
@@ -36,7 +36,7 @@ export default function CategoryFilter({ selected, onChange }: Props) {
                                     : 'glass-pill text-white/50 hover:text-white/80',
                             ].join(' ')}
                         >
-                            <span className="text-base leading-none">{cat.emoji}</span>
+                            <span className="text-base leading-none grayscale opacity-80">{cat.emoji}</span>
                             <span>{cat.label}</span>
                         </button>
                     )

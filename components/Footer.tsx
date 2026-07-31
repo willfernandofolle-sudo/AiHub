@@ -6,17 +6,17 @@ export default function Footer() {
                 <div className="flex items-center gap-2.5">
                     <span
                         className="w-6 h-6 rounded-lg text-xs flex items-center justify-center font-bold text-white"
-                        style={{ background: 'linear-gradient(135deg, #7c3aed, #2563eb)' }}
+                        style={{ background: 'linear-gradient(135deg, #f5f5f5, #52525b)' }}
                     >
                         ✦
                     </span>
                     <span className="text-sm text-white/30">
-                        AI Hub — Exclusivo para alunos do curso de IA
+                        AI Hub — Esclusivo per gli studenti del corso di IA
                     </span>
                 </div>
 
                 <p className="text-xs text-white/15 text-center">
-                    Links para ferramentas de terceiros. Acesse com responsabilidade.
+                    Link a strumenti di terze parti. Usali con responsabilita.
                 </p>
 
             </div>

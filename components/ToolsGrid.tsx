@@ -6,17 +6,17 @@ import CategoryFilter from './CategoryFilter'
 import ToolCard from './ToolCard'
 
 export default function ToolsGrid() {
-    const [selected, setSelected] = useState<Category | 'todas'>('todas')
+    const [selected, setSelected] = useState<Category | 'tutte'>('tutte')
 
     const filtered = useMemo(() => {
         const list =
-            selected === 'todas' ? tools : tools.filter((t) => t.category === selected)
+            selected === 'tutte' ? tools : tools.filter((t) => t.category === selected)
         // Featured tools appear first
         return [...list].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0))
     }, [selected])
 
     return (
-        <section id="ferramentas" className="pb-28">
+        <section id="strumenti" className="pt-28 pb-28">
 
             {/* Category filter */}
             <div className="mb-8">
@@ -27,7 +27,7 @@ export default function ToolsGrid() {
 
                 {/* Result count */}
                 <p className="text-xs text-white/25 tracking-wide">
-                    {filtered.length} {filtered.length === 1 ? 'ferramenta' : 'ferramentas'}
+                    {filtered.length} {filtered.length === 1 ? 'strumento' : 'strumenti'}
                 </p>
 
                 {/* Grid */}

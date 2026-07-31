@@ -1,6 +1,5 @@
 import Background from '@/components/Background'
 import Header from '@/components/Header'
-import Hero from '@/components/Hero'
 import ToolsGrid from '@/components/ToolsGrid'
 import Footer from '@/components/Footer'
 
@@ -10,7 +9,6 @@ export default function Home() {
             <Background />
             <div className="relative z-10">
                 <Header />
-                <Hero />
                 <ToolsGrid />
                 <Footer />
             </div>
