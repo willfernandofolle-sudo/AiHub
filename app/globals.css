@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg: #06070f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+    color: white;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Glass system ─────────────────────────────────── */
+@layer components {
+
+    /* Nav bar */
+    .glass-nav {
+        background: rgba(6, 7, 15, 0.6);
+        backdrop-filter: blur(32px) saturate(200%);
+        -webkit-backdrop-filter: blur(32px) saturate(200%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Generic pill */
+    .glass-pill {
+        background: rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.11);
+        transition: all 0.2s ease;
+    }
+
+    .glass-pill:hover {
+        background: rgba(255, 255, 255, 0.12);
+        border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    /* Tool card */
+    .glass-card {
+        background: rgba(255, 255, 255, 0.045);
+        backdrop-filter: blur(24px) saturate(180%);
+        -webkit-backdrop-filter: blur(24px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.45),
+            inset 0 1px 0 rgba(255, 255, 255, 0.07);
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+            box-shadow 0.3s ease,
+            border-color 0.3s ease,
+            background 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* iOS-26 specular highlight on top edge */
+    .glass-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.07) 0%,
+                transparent 45%);
+        pointer-events: none;
+        border-radius: inherit;
+    }
+
+    .glass-card:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.17);
+        box-shadow:
+            0 24px 64px rgba(0, 0, 0, 0.55),
+            0 0 0 1px rgba(255, 255, 255, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.12);
+        transform: translateY(-5px) scale(1.015);
+    }
+
+    /* Gradient text helpers */
+    .text-glow {
+        background: linear-gradient(160deg, #ffffff 0%, rgba(255, 255, 255, 0.65) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .text-glow-accent {
+        background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #34d399 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: shimmer 4s linear infinite;
+    }
+}
+
+/* ── Scrollbar ────────────────────────────────────── */
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
