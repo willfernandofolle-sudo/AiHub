@@ -5,7 +5,7 @@ interface Props { tool: Tool }
 
 const badgeStyle: Record<string, string> = {
     Gratis: 'bg-white/10 text-white border border-white/14',
-    Freemium: 'bg-sky-200/10 text-sky-100 border border-sky-200/14',
+    Freemium: 'bg-violet-200/10 text-violet-100 border border-violet-200/16',
     'A pagamento': 'bg-white text-[#08111f] border border-white/80',
 }
 

@@ -32,7 +32,7 @@ export default function CategoryFilter({ selected, onChange }: Props) {
                                 'flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-medium',
                                 'whitespace-nowrap flex-shrink-0 transition-all duration-200',
                                 active
-                                    ? 'bg-white text-[#08111f] border border-white/40 shadow-[0_16px_36px_rgba(186,214,255,0.24)]'
+                                    ? 'bg-white text-[#08111f] border border-white/40 shadow-[0_16px_36px_rgba(167,139,250,0.24)]'
                                     : 'glass-pill text-white/62 hover:text-white',
                             ].join(' ')}
                         >

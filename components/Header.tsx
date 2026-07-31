@@ -10,8 +10,8 @@ export default function Header() {
                     <span
                         className="w-8 h-8 rounded-[10px] flex items-center justify-center text-sm font-bold text-white select-none"
                         style={{
-                            background: 'linear-gradient(135deg, #dbeafe, #60a5fa)',
-                            boxShadow: '0 10px 28px rgba(96,165,250,0.28)',
+                            background: 'linear-gradient(135deg, #ede9fe, #a78bfa)',
+                            boxShadow: '0 10px 28px rgba(167,139,250,0.28)',
                         }}
                     >
                         A

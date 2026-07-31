@@ -6,11 +6,11 @@
     --bg: #08111f;
     --surface: rgba(12, 22, 38, 0.72);
     --surface-strong: rgba(16, 28, 48, 0.84);
-    --border: rgba(164, 190, 255, 0.16);
+    --border: rgba(189, 176, 255, 0.14);
     --ink: #f5f7fb;
     --muted: rgba(226, 232, 240, 0.72);
-    --accent: #8ec5ff;
-    --accent-soft: #67e8f9;
+    --accent: #c4b5fd;
+    --accent-soft: #a78bfa;
 }
 
 html {
@@ -81,10 +81,10 @@ body {
 
     .glass-card:hover {
         background: linear-gradient(180deg, rgba(18, 30, 52, 0.92) 0%, rgba(10, 18, 34, 0.94) 100%);
-        border-color: rgba(186, 214, 255, 0.28);
+        border-color: rgba(196, 181, 253, 0.26);
         box-shadow:
             0 24px 60px rgba(2, 6, 23, 0.42),
-            0 0 0 1px rgba(186, 214, 255, 0.08),
+            0 0 0 1px rgba(196, 181, 253, 0.07),
             inset 0 1px 0 rgba(255, 255, 255, 0.12);
         transform: translateY(-5px) scale(1.015);
     }
@@ -98,7 +98,7 @@ body {
     }
 
     .text-glow-accent {
-        background: linear-gradient(135deg, #ffffff 0%, #b2d1ff 42%, #67e8f9 100%);
+        background: linear-gradient(135deg, #ffffff 0%, #ddd6fe 42%, #a78bfa 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -107,7 +107,7 @@ body {
     .hero-surface {
         background:
             radial-gradient(circle at 18% 22%, rgba(120, 119, 198, 0.18) 0%, transparent 28%),
-            radial-gradient(circle at 76% 18%, rgba(103, 232, 249, 0.16) 0%, transparent 24%),
+            radial-gradient(circle at 76% 18%, rgba(167, 139, 250, 0.14) 0%, transparent 24%),
             linear-gradient(180deg, rgba(4, 8, 19, 0.18) 0%, rgba(4, 8, 19, 0.46) 66%, rgba(4, 8, 19, 0.96) 100%);
         pointer-events: none;
     }
@@ -133,10 +133,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(186, 214, 255, 0.24);
+    background: rgba(196, 181, 253, 0.24);
     border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(186, 214, 255, 0.38);
+    background: rgba(196, 181, 253, 0.38);
 }

@@ -7,8 +7,8 @@ export default function Footer() {
                     <span
                         className="w-6 h-6 rounded-lg text-xs flex items-center justify-center font-bold text-[#08111f]"
                         style={{
-                            background: 'linear-gradient(135deg, #dbeafe, #67e8f9)',
-                            boxShadow: '0 10px 24px rgba(103,232,249,0.2)',
+                            background: 'linear-gradient(135deg, #ede9fe, #a78bfa)',
+                            boxShadow: '0 10px 24px rgba(167,139,250,0.24)',
                         }}
                     >
                         A

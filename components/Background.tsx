@@ -11,16 +11,16 @@ export default function Background() {
             <div
                 className="absolute -top-48 -left-48 w-[700px] h-[700px] rounded-full opacity-[0.34] animate-blob"
                 style={{
-                    background: 'radial-gradient(circle, rgba(126, 119, 255, 0.34) 0%, rgba(60, 130, 246, 0.18) 34%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(126, 119, 255, 0.28) 0%, rgba(79, 70, 229, 0.16) 34%, transparent 70%)',
                     filter: 'blur(90px)',
                 }}
             />
 
-            {/* ── Blob 2 — cyan flare, top-right ── */}
+            {/* ── Blob 2 — violet haze, top-right ── */}
             <div
                 className="absolute -top-20 right-0 w-[550px] h-[550px] rounded-full opacity-[0.2] animate-blob-slow"
                 style={{
-                    background: 'radial-gradient(circle, rgba(103,232,249,0.3) 0%, rgba(59,130,246,0.16) 45%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(167,139,250,0.26) 0%, rgba(129,140,248,0.15) 45%, transparent 70%)',
                     filter: 'blur(90px)',
                     animationDelay: '-9s',
                 }}
@@ -40,7 +40,7 @@ export default function Background() {
             <div
                 className="absolute -bottom-32 right-1/4 w-[600px] h-[600px] rounded-full opacity-[0.18] animate-blob"
                 style={{
-                    background: 'radial-gradient(circle, rgba(37,99,235,0.2) 0%, rgba(8,17,31,0.12) 45%, transparent 70%)',
+                    background: 'radial-gradient(circle, rgba(109,40,217,0.22) 0%, rgba(8,17,31,0.12) 45%, transparent 70%)',
                     filter: 'blur(90px)',
                     animationDelay: '-4s',
                 }}
