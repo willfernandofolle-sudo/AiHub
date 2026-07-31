@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --bg: #050505;
+    --bg: #fafaf9;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 
 body {
     background-color: var(--bg);
-    color: white;
+    color: #0a0a0a;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -23,35 +23,35 @@ body {
 
     /* Nav bar */
     .glass-nav {
-        background: rgba(5, 5, 5, 0.78);
+        background: rgba(255, 255, 255, 0.84);
         backdrop-filter: blur(32px) saturate(200%);
         -webkit-backdrop-filter: blur(32px) saturate(200%);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid rgba(10, 10, 10, 0.08);
     }
 
     /* Generic pill */
     .glass-pill {
-        background: rgba(255, 255, 255, 0.07);
+        background: rgba(255, 255, 255, 0.72);
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
-        border: 1px solid rgba(255, 255, 255, 0.11);
+        border: 1px solid rgba(10, 10, 10, 0.1);
         transition: all 0.2s ease;
     }
 
     .glass-pill:hover {
-        background: rgba(255, 255, 255, 0.12);
-        border-color: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.95);
+        border-color: rgba(10, 10, 10, 0.18);
     }
 
     /* Tool card */
     .glass-card {
-        background: rgba(255, 255, 255, 0.045);
+        background: rgba(255, 255, 255, 0.78);
         backdrop-filter: blur(24px) saturate(180%);
         -webkit-backdrop-filter: blur(24px) saturate(180%);
-        border: 1px solid rgba(255, 255, 255, 0.09);
+        border: 1px solid rgba(10, 10, 10, 0.08);
         box-shadow:
-            0 8px 32px rgba(0, 0, 0, 0.45),
-            inset 0 1px 0 rgba(255, 255, 255, 0.07);
+            0 10px 30px rgba(10, 10, 10, 0.08),
+            inset 0 1px 0 rgba(255, 255, 255, 0.75);
         transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
             box-shadow 0.3s ease,
             border-color 0.3s ease,
@@ -66,32 +66,32 @@ body {
         position: absolute;
         inset: 0;
         background: linear-gradient(180deg,
-                rgba(255, 255, 255, 0.07) 0%,
+                rgba(255, 255, 255, 0.52) 0%,
                 transparent 45%);
         pointer-events: none;
         border-radius: inherit;
     }
 
     .glass-card:hover {
-        background: rgba(255, 255, 255, 0.08);
-        border-color: rgba(255, 255, 255, 0.17);
+        background: rgba(255, 255, 255, 0.96);
+        border-color: rgba(10, 10, 10, 0.14);
         box-shadow:
-            0 24px 64px rgba(0, 0, 0, 0.55),
-            0 0 0 1px rgba(255, 255, 255, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.12);
+            0 20px 40px rgba(10, 10, 10, 0.12),
+            0 0 0 1px rgba(10, 10, 10, 0.04),
+            inset 0 1px 0 rgba(255, 255, 255, 0.9);
         transform: translateY(-5px) scale(1.015);
     }
 
     /* Gradient text helpers */
     .text-glow {
-        background: linear-gradient(160deg, #ffffff 0%, rgba(255, 255, 255, 0.65) 100%);
+        background: linear-gradient(160deg, #0a0a0a 0%, rgba(10, 10, 10, 0.72) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 
     .text-glow-accent {
-        background: linear-gradient(135deg, #ffffff 0%, rgba(212, 212, 216, 0.9) 45%, rgba(113, 113, 122, 0.95) 100%);
+        background: linear-gradient(135deg, #0a0a0a 0%, rgba(39, 39, 42, 0.92) 45%, rgba(113, 113, 122, 0.86) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -114,14 +114,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(10, 10, 10, 0.04);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(10, 10, 10, 0.2);
     border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.22);
+    background: rgba(10, 10, 10, 0.35);
 }

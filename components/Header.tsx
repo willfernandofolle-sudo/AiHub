@@ -10,13 +10,13 @@ export default function Header() {
                     <span
                         className="w-8 h-8 rounded-[10px] flex items-center justify-center text-sm font-bold text-white select-none"
                         style={{
-                            background: 'linear-gradient(135deg, #f5f5f5, #6b7280)',
-                            boxShadow: '0 0 18px rgba(255,255,255,0.18)',
+                            background: '#0a0a0a',
+                            boxShadow: '0 10px 22px rgba(10,10,10,0.14)',
                         }}
                     >
-                        ✦
+                        A
                     </span>
-                    <span className="text-base font-bold tracking-tight">
+                    <span className="text-base font-bold tracking-tight text-black">
                         AI&nbsp;<span className="text-glow-accent">Hub</span>
                     </span>
                 </Link>
