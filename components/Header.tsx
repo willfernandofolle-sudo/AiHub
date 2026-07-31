@@ -3,21 +3,24 @@ import Link from 'next/link'
 export default function Header() {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 glass-nav">
-            <div className="max-w-7xl mx-auto px-5 h-[60px] flex items-center justify-center gap-10 lg:gap-14">
+            <div className="max-w-7xl mx-auto px-5 h-[60px] grid grid-cols-[1fr_auto_1fr] items-center gap-4 md:gap-8">
 
-                {/* Logo */}
-                <Link href="/" className="flex items-baseline gap-3 flex-shrink-0">
+                <Link href="/" className="justify-self-start whitespace-nowrap">
                     <span className="text-base font-bold tracking-tight text-white">
                         AI <span className="text-glow-accent">Hub</span>
                     </span>
-                    <span className="text-xs uppercase tracking-[0.2em] text-white/48">
-                        by william folle
-                    </span>
                 </Link>
 
-                <p className="hidden md:block text-sm text-white/68 tracking-wide">
+                <p className="text-[11px] md:text-sm text-white/68 tracking-wide text-center whitespace-nowrap">
                     Una collezione AI con presenza scenica.
                 </p>
+
+                <span
+                    className="justify-self-end text-sm md:text-base text-white/78 leading-none whitespace-nowrap"
+                    style={{ fontFamily: '"Brush Script MT", "Segoe Script", cursive' }}
+                >
+                    by william
+                </span>
 
             </div>
         </header>
