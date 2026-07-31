@@ -19,7 +19,7 @@ export default function Header() {
                     className="justify-self-end text-sm md:text-base text-white/78 leading-none whitespace-nowrap"
                     style={{ fontFamily: '"Brush Script MT", "Segoe Script", cursive' }}
                 >
-                    by william
+                    by william fernando folle
                 </span>
 
             </div>
