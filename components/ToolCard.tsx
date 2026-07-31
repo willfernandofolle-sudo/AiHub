@@ -1,10 +1,24 @@
+"use client"
+
+import { useState } from 'react'
 import CategoryIcon from './CategoryIcon'
 import { Tool, categoryConfig } from '@/data/tools'
 
 interface Props { tool: Tool }
 
+function getLogoUrl(url: string) {
+    try {
+        const domain = new URL(url).hostname.replace(/^www\./, '')
+        return `https://logo.clearbit.com/${domain}`
+    } catch {
+        return ''
+    }
+}
+
 export default function ToolCard({ tool }: Props) {
     const cat = categoryConfig[tool.category]
+    const [logoError, setLogoError] = useState(false)
+    const logoUrl = getLogoUrl(tool.url)
 
     return (
         <a
@@ -16,7 +30,17 @@ export default function ToolCard({ tool }: Props) {
             {/* ── Top row ── */}
             <div className="flex items-center gap-3">
 
-                <CategoryIcon category={tool.category} className="h-8 w-8 stroke-[1.8] text-white/88 flex-shrink-0" />
+                {!logoError && logoUrl ? (
+                    <img
+                        src={logoUrl}
+                        alt={`Logo ${tool.name}`}
+                        className="h-8 w-8 object-contain flex-shrink-0"
+                        loading="lazy"
+                        onError={() => setLogoError(true)}
+                    />
+                ) : (
+                    <CategoryIcon category={tool.category} className="h-8 w-8 stroke-[1.8] text-white/88 flex-shrink-0" />
+                )}
 
                 <h3 className="font-bold text-white text-[1.1rem] leading-tight">{tool.name}</h3>
             </div>

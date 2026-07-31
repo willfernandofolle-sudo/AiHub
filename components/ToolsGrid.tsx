@@ -19,11 +19,11 @@ export default function ToolsGrid() {
         <section id="strumenti" className="pt-20 pb-28">
 
             {/* Category filter */}
-            <div className="mb-8">
+            <div className="mb-12">
                 <CategoryFilter selected={selected} onChange={setSelected} />
             </div>
 
-            <div className="max-w-7xl mx-auto px-5 space-y-5">
+            <div className="max-w-7xl mx-auto px-5 space-y-7">
 
                 {/* Result count */}
                 <p className="text-xs text-white/42 tracking-[0.24em] uppercase">
@@ -31,7 +31,7 @@ export default function ToolsGrid() {
                 </p>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {filtered.map((tool) => (
                         <ToolCard key={tool.id} tool={tool} />
                     ))}
