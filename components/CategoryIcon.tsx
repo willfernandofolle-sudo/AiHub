@@ -12,12 +12,28 @@ const iconMap: Record<Category | 'tutte', LucideIcon> = {
     avatar: User,
 }
 
+const appleCategoryColors: Record<Category, string> = {
+    imagem: '#0A344A',
+    video: '#441320',
+    texto: '#4B3D04',
+    codigo: '#1F4013',
+    audio: '#1A4D68',
+    produtividade: '#66530A',
+    avatar: '#5A2030',
+}
+
 interface Props extends LucideProps {
     category: Category | 'tutte'
+    useCategoryColor?: boolean
     className?: string
 }
 
-export default function CategoryIcon({ category, ...props }: Props) {
+export default function CategoryIcon({ category, useCategoryColor = false, style, ...props }: Props) {
     const Icon = iconMap[category]
-    return <Icon {...props} />
+
+    const coloredStyle = useCategoryColor && category !== 'tutte'
+        ? { color: appleCategoryColors[category], ...style }
+        : style
+
+    return <Icon {...props} style={coloredStyle} />
 }

@@ -39,7 +39,7 @@ export default function ToolCard({ tool }: Props) {
                         onError={() => setLogoError(true)}
                     />
                 ) : (
-                    <CategoryIcon category={tool.category} className="h-8 w-8 stroke-[1.8] text-white/88 flex-shrink-0" />
+                    <CategoryIcon category={tool.category} useCategoryColor className="h-8 w-8 stroke-[1.8] flex-shrink-0" />
                 )}
 
                 <h3 className="font-bold text-white text-[1.1rem] leading-tight">{tool.name}</h3>
@@ -55,7 +55,7 @@ export default function ToolCard({ tool }: Props) {
             {/* ── Footer ── */}
             <div className="flex items-center justify-between pt-3 border-t border-white/[0.08]">
                 <span className="text-[11px] text-white/44 flex items-center gap-1.5">
-                    <CategoryIcon category={tool.category} className="h-3.5 w-3.5 stroke-[1.8] text-white/70" />
+                    <CategoryIcon category={tool.category} useCategoryColor className="h-3.5 w-3.5 stroke-[1.8]" />
                     {cat.label}
                 </span>
                 <span className="text-[13px] text-white/48 group-hover:text-white transition-colors flex items-center gap-1">
