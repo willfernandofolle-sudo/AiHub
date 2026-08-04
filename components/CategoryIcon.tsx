@@ -13,13 +13,13 @@ const iconMap: Record<Category | 'tutte', LucideIcon> = {
 }
 
 const appleCategoryColors: Record<Category, string> = {
-    imagem: '#0A344A',
-    video: '#441320',
-    texto: '#4B3D04',
-    codigo: '#1F4013',
-    audio: '#1A4D68',
-    produtividade: '#66530A',
-    avatar: '#5A2030',
+    imagem: '#2A6F8E',
+    video: '#8C2F3E',
+    texto: '#8A6E12',
+    codigo: '#2F6A2C',
+    audio: '#2F7C9F',
+    produtividade: '#A1821A',
+    avatar: '#A44657',
 }
 
 interface Props extends LucideProps {
