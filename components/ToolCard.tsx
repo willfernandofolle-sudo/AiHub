@@ -18,6 +18,7 @@ function getLogoUrl(url: string) {
 export default function ToolCard({ tool }: Props) {
     const cat = categoryConfig[tool.category]
     const [logoError, setLogoError] = useState(false)
+    const [logoLoaded, setLogoLoaded] = useState(false)
     const logoUrl = getLogoUrl(tool.url)
 
     return (
@@ -30,17 +31,28 @@ export default function ToolCard({ tool }: Props) {
             {/* ── Top row ── */}
             <div className="flex items-center gap-3">
 
-                {!logoError && logoUrl ? (
-                    <img
-                        src={logoUrl}
-                        alt={`Logo ${tool.name}`}
-                        className="h-8 w-8 object-contain flex-shrink-0"
-                        loading="lazy"
-                        onError={() => setLogoError(true)}
-                    />
-                ) : (
-                    <CategoryIcon category={tool.category} useCategoryColor className="h-8 w-8 stroke-[1.8] flex-shrink-0" />
-                )}
+                <div className="relative h-8 w-8 flex-shrink-0">
+                    {!logoError && logoUrl && (
+                        <img
+                            src={logoUrl}
+                            alt={`Logo ${tool.name}`}
+                            className={[
+                                'absolute inset-0 h-8 w-8 object-contain transition-opacity duration-200',
+                                logoLoaded ? 'opacity-100' : 'opacity-0',
+                            ].join(' ')}
+                            loading="lazy"
+                            onLoad={() => setLogoLoaded(true)}
+                            onError={() => {
+                                setLogoError(true)
+                                setLogoLoaded(false)
+                            }}
+                        />
+                    )}
+
+                    {(!logoUrl || logoError || !logoLoaded) && (
+                        <CategoryIcon category={tool.category} useCategoryColor className="h-8 w-8 stroke-[1.8]" />
+                    )}
+                </div>
 
                 <h3 className="font-bold text-white text-[1.1rem] leading-tight">{tool.name}</h3>
             </div>
