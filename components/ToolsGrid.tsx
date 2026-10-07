@@ -16,7 +16,7 @@ export default function ToolsGrid() {
     }, [selected])
 
     return (
-        <section id="strumenti" className="pt-20 pb-28">
+        <section id="strumenti" className="relative z-10 -mt-[100px] bg-[var(--bg)] pt-20 pb-28">
 
             {/* Category filter */}
             <div className="mb-12">
