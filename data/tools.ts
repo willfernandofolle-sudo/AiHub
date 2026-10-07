@@ -162,6 +162,16 @@ export const tools: Tool[] = [
         gradient: 'linear-gradient(135deg, #0891b2, #0e7490)',
         badge: 'Freemium',
     },
+    {
+        id: 'lumen5',
+        name: 'Lumen5',
+        description: 'Trasforma articoli e testi in video coinvolgenti con l aiuto dell IA, usando modelli e contenuti multimediali.',
+        url: 'https://lumen5.com',
+        category: 'video',
+        emoji: '🎞️',
+        gradient: 'linear-gradient(135deg, #0891b2, #2563eb)',
+        badge: 'Freemium',
+    },
 
     // ─────────────────────────────────────────
     // ✍️ TEXTO & CHAT
@@ -209,6 +219,26 @@ export const tools: Tool[] = [
         badge: 'Freemium',
     },
     {
+        id: 'character-ai',
+        name: 'Character.AI',
+        description: 'Chatta e crea personaggi IA personalizzati con personalita e conversazioni interattive.',
+        url: 'https://character.ai',
+        category: 'texto',
+        emoji: '🎭',
+        gradient: 'linear-gradient(135deg, #7c3aed, #db2777)',
+        badge: 'Freemium',
+    },
+    {
+        id: 'jasper-ai',
+        name: 'Jasper AI',
+        description: 'Assistente IA per creare contenuti di marketing, testi per campagne e materiali coerenti con il brand.',
+        url: 'https://www.jasper.ai',
+        category: 'texto',
+        emoji: '✍️',
+        gradient: 'linear-gradient(135deg, #2563eb, #0891b2)',
+        badge: 'A pagamento',
+    },
+    {
         id: 'grok',
         name: 'Grok',
         description: 'IA di X con accesso a informazioni in tempo reale. Personalita diretta e risposte aggiornate.',
@@ -241,6 +271,16 @@ export const tools: Tool[] = [
         category: 'codigo',
         emoji: '🐙',
         gradient: 'linear-gradient(135deg, #24292e, #444d56)',
+        badge: 'A pagamento',
+    },
+    {
+        id: 'claude-code',
+        name: 'Claude Code',
+        description: 'Agente di codifica di Anthropic che comprende il progetto, modifica file ed esegue comandi dal terminale.',
+        url: 'https://claude.ai/code',
+        category: 'codigo',
+        emoji: '🧠',
+        gradient: 'linear-gradient(135deg, #d97706, #b45309)',
         badge: 'A pagamento',
     },
     {
@@ -298,6 +338,16 @@ export const tools: Tool[] = [
         gradient: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
         badge: 'Freemium',
     },
+    {
+        id: 'google-tts',
+        name: 'Google TTS',
+        description: 'Servizio di sintesi vocale di Google Cloud per convertire testi in voci naturali in diverse lingue.',
+        url: 'https://cloud.google.com/text-to-speech',
+        category: 'audio',
+        emoji: '🗣️',
+        gradient: 'linear-gradient(135deg, #2563eb, #0891b2)',
+        badge: 'Freemium',
+    },
 
     // ─────────────────────────────────────────
     // ⚡ PRODUTIVIDADE
@@ -341,6 +391,26 @@ export const tools: Tool[] = [
         category: 'produtividade',
         emoji: '⚡',
         gradient: 'linear-gradient(135deg, #ea580c, #dc2626)',
+        badge: 'Freemium',
+    },
+    {
+        id: 'hermes-agent',
+        name: 'Hermes Agent',
+        description: 'Agente IA open source di Nous Research che esegue attività e automatizza flussi di lavoro tramite strumenti e modelli linguistici.',
+        url: 'https://github.com/NousResearch/hermes-agent',
+        category: 'produtividade',
+        emoji: '🪽',
+        gradient: 'linear-gradient(135deg, #0891b2, #059669)',
+        badge: 'Freemium',
+    },
+    {
+        id: 'fireflies-ai',
+        name: 'Fireflies AI',
+        description: 'Registra, trascrive e riassume riunioni, aiutando i team a cercare decisioni e attivita nelle conversazioni.',
+        url: 'https://fireflies.ai',
+        category: 'produtividade',
+        emoji: '🔥',
+        gradient: 'linear-gradient(135deg, #ea580c, #d97706)',
         badge: 'Freemium',
     },
 
